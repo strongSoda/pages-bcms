@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <title><%= coursepage.title %></title>
+    <meta property="og:title" content="<%= coursepage.title %>" /> 
+  </head>
+  <body>
+    <h1><%= coursepage.hero_title %></h1>
+    <img width="100%" src="<%= @coursepage.hero_image %>">
+    <h3>Customers Love Us!</h3>
+    <!-- Loop over customer logos -->
+    <%= @coursepage.body %>
+  </body>
+</html>
