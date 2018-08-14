@@ -8,7 +8,7 @@ app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
 
 // Routes
-app.get('git01/', function() {
+app.get('/git01/', function() {
   butter.page.retrieve("*", "Git01").then(function(resp) {
     var page = resp.data.data;
 
